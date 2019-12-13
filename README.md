@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Impact and Response to the Opioid Crisis in Kentucky
 
-You can use the [editor on GitHub](https://github.com/avyma/opioid-ky/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+It is well-documented that the opioid crisis has wreaked havoc and tragedies across our nation. In the midst of the crisis, many experts and health leaders have identified Kentucky as the epic-center of the opioid epidemic. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this module, a map of 2018 opioid mortality of Kentucky counties is created. The map will attempt to include the following features:
 
-### Markdown
+* Overlay of medical facilities, law enforcement agencies as well as community centers dedicated to the effort of combatting opioid addictions in each counties.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Source of Data ###
+The following list the sources of data that will be consulted to complete the project:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/avyma/opioid-ky/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Opioid mortality in Kentucky by county (2018) - [KIPRC- Kentucky Injury Prevention and Research Center](http://www.mc.uky.edu/kiprc/pubs/overdose/mortality-dashboard.html).
+* Substance Abuse and Mental Health Treatment Facilities (2019) - [Substance Abuse and Mental Health Administration](https://findtreatment.samhsa.gov/locator)
+* [US State boundaries](https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_state_20m.zip)
+* [US County boundaries](https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_county_20m.zip)
