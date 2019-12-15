@@ -19,7 +19,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: hsl(0, 0%, 0%);
+            background: hsl(0, 0%, 100%);
             font-family: 'Lato', sans-serif;
             font-weight: 300;
             color: #3d3d3d;
@@ -28,7 +28,8 @@
         }
 
         .header {
-            padding: 45px;
+            padding: 120px 5px 1px 10px;
+            height:120px;
             vertical-align: text-bottom;
             background:#05283e url('image/weg7.jpg') 100% 100% no-repeat;
             color: white;
@@ -59,6 +60,19 @@
             font-style: italic;
             margin: 0 0 25px 0;
         }
+
+
+        hky {
+            font-family: 'Comic Sans', sans-serif;
+            font-weight: 300;
+            color: hsl(142,88%,49%);
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: bold;
+            margin: 0 0 60px 0;
+        }
+
+
 
         p {
             font-size: 1.15em;
@@ -147,21 +161,63 @@
                 width: 100%;
             }
         }
+
+        .flex-container {
+            display:flex;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            background-color:white;
+            
+        }
+
+        .flex-containermap {
+            display:flex;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+            background-color:white;
+            border-style: solid;
+            border-width: 1px;
+            border-color:#05283e;
+            
+        }
+
+
+
+        .flex-container > div {
+            width: 25%;
+            height: 60px;
+            margin: 5px;
+            border-radius: 0px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color:#05283e;
+
+        }
+
     </style>
 </head>
 
 <body>
 
     <div class="header">
-        <h2>Kentucky</h2>
-        <h1>Impact and Response to the Opioid Crisis 2018</h1>
+        <hky>Kentucky 2018</hky>
+        <h1>Impact and Response to the Opioid Crisis</h1>
     </div>
 
-    <iframe width="100%" height="680" frameborder="20px" src="https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-    <section>
-        <a href="https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed" class="linkbox">Full-screen version</a>
+    <iframe width="100%" height="600px" frameborder="10px" src="https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    
+        
+        
+        
+        <div class="flex-containermap">
+            <button onclick="window.location.href='https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed';">Full-screen version</button>   
+        </div>
 
         
+     <section>   
         <div class="row">
             <div class="first-column">
                 <p>
@@ -206,6 +262,13 @@
                     <li>Visit New Maps Plus Mapping Portfolio <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</a>.</li>	
                 </ul>
             </div>
+        </div>
+
+        <div class="flex-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
 
     </section>
