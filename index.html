@@ -95,13 +95,22 @@
 
         a {
             color: #2e3aa7;
-            text-decoration:none;
+            font-weight: bold;
         } 
 
         afooter {
             color: yellow;
             text-decoration:none;
-        } 
+        }
+
+        aimage{
+            color: #2e3aa7;
+            padding: 10px 40px 10px 10px;
+            text-decoration:none;
+            font-weight: bold;
+            vertical-align:text-bottom;
+
+        }
 
         a:hover {
             text-decoration: underline;
@@ -191,7 +200,7 @@
             display:flex;
             align-items: center;
             width: 100%;
-            height: 200px;
+            height: 350px;
             background-color:white;
             
         }
@@ -209,17 +218,28 @@
             
         }
 
+        .image-wrapper {
+            width: 100%;
+            border: 0px;
+            position: relative;
 
+        }
+        .image {
+            width:100%;
+            vertical-align:center;
+            position:absolute;
+        }
 
         .flex-container> div{
             width: 25%;
-            height: 60px;
+            height: 350px;
             margin: 5px;
+            padding: 5px 5px 5px 5px;
             border-radius: 0px;
             background-color: white;
             border-style: solid;
             border-width: 1px;
-            border-color:#05283e;
+            border-color:#a4a5a5;
 
         }
 
@@ -286,28 +306,65 @@
                 </ul>
 
 
-                <hr>
-                <h3>Project assets</h3>
-                <ul>
-                    <li><a href="../geojson" download>Crater point locations GeoJSON</a></li>
-                </ul>
+           
+                
+                
                 </p>
 
 
             </div>
             
         </div>
-
+        <hr>
+<div>
+    <h3>Project assets</h3>
+</div>
         <div class="flex-container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <div> 
+                    <aimage text-align="center" href="/geojson">GEOJSON</aimage>
+
+                </div>            
+                <div class="image-wrapper">
+                    <a href="/geojson">
+                    <img class="image" src="image/preventing-suicide-c.jpg" alt="geojson"></a>
+                </div>
+            </div>
+            <div>
+                <div> 
+                    <aimage text-align="center" href="https://www.census.gov/programs-surveys/geography.html">US CENSUS</aimage>
+                </div>
+
+                <div class="image-wrapper">
+                    <a href="https://www.census.gov/programs-surveys/geography.html">
+                    <img class="image" src="image/general-image-doctor_3.jpg" alt="US Census"></a>
+                </div>
+            </div>
+            <div>
+                <div> 
+                    <aimage text-align="center" href="https://findtreatment.samhsa.gov/locator">SAMHSA</aimage>
+                </div>
+
+                <div class="image-wrapper">
+                    <a href="https://findtreatment.samhsa.gov/locator">
+                    <img class="image" src="image/parental_marijuana-3.jpg" alt="SAMHSA"></a>
+                </div>
+             </div>
+            <div>
+                <div> 
+                    <aimage text-align="center" href="www.mc.uky.edu/kiprc">KIPRC</aimage>
+                </div>
+
+                <div class="image-wrapper">
+                    <a href="www.mc.uky.edu/kiprc">
+                    <img class="image" src="image/general-image-doctor-kiprc.jpg" alt="KIPRC"></a>
+                </div>
+            </div>
         </div>
 
     </section>
 </body>
-
+<br>
 <footer>
     <div class="footer">
         <div class="flex-containerfooter">
