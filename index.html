@@ -34,7 +34,20 @@
             background:#05283e url('image/weg7.jpg') 100% 100% no-repeat;
             color: white;
             font-size: 20px;
-}
+        }
+        
+
+        .footer {
+            padding: 0px 0px 0px 0px;
+            height:200px;
+            vertical-align: text-top;
+            background:#05283e url('image/weg7.jpg') 100% 100% no-repeat;
+            color: white;
+            font-size: 16px;
+        }       
+        
+        
+        
         section {
             width: 80%;
             margin: 10px auto;
@@ -85,6 +98,11 @@
             text-decoration:none;
         } 
 
+        afooter {
+            color: yellow;
+            text-decoration:none;
+        } 
+
         a:hover {
             text-decoration: underline;
         }
@@ -94,6 +112,13 @@
             /* font-size: 0.96em; */
             line-height: 1.6em;
             color: #63666a;
+        }
+
+        ulfooter {
+            padding: 0px 20px 4px 4px;
+            /* font-size: 0.96em; */
+            line-height: 0.8em;
+            color: white;
         }
 
         li {
@@ -128,13 +153,13 @@
 
         .first-column {
             float: left;
-            width: 48%;
+            width: 70%;
             padding-right: 20px;
         }
 
         .column {
             float: left;
-            width: 48%;
+            width: 90%;
         }
 
         /* Clear floats after the columns */
@@ -161,7 +186,7 @@
                 width: 100%;
             }
         }
-
+        /* Flex container as a way to segment data sources authority in container box */
         .flex-container {
             display:flex;
             align-items: center;
@@ -170,27 +195,57 @@
             background-color:white;
             
         }
-
+        /* Flex container created for button to full screen map */
         .flex-containermap {
             display:flex;
-            align-items: center;
+            align-items: left;
+            padding: 20px 20px 20px 20px;
             width: 100%;
             height: 30px;
-            background-color:white;
+            background-color:whitesmoke;
             border-style: solid;
             border-width: 1px;
-            border-color:#05283e;
+            border-color:#e2e2e2;
             
         }
 
 
 
-        .flex-container > div {
+        .flex-container> div{
             width: 25%;
             height: 60px;
             margin: 5px;
             border-radius: 0px;
             background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color:#05283e;
+
+        }
+
+        .flex-containerfooter {
+            display:flex;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .flex-containerfooter> div{
+            text-align: left;
+            padding: 5px 5px 10px 10px;
+            width: 25%;
+            height: 120px;
+            margin: 1px;
+        }
+
+        .flex-containerfooterlogo> div{
+            display:flex;
+            align-items: left;
+            width: 35%;
+            height: 120px;
+            margin: 5px;
+            border-radius: 0px;
             border-style: solid;
             border-width: 1px;
             border-color:#05283e;
@@ -207,10 +262,7 @@
         <h1>Impact and Response to the Opioid Crisis</h1>
     </div>
 
-    <iframe width="100%" height="600px" frameborder="10px" src="https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-    
-        
-        
+    <iframe width="100%" height="600px" frameborder="20px" src="https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>  
         
         <div class="flex-containermap">
             <button onclick="window.location.href='https://nmp.carto.com/u/de-vuesualizer/builder/10fcbf53-b7a6-4304-9063-a9ee25e72e97/embed';">Full-screen version</button>   
@@ -219,7 +271,7 @@
         
      <section>   
         <div class="row">
-            <div class="first-column">
+            <div class="column">
                 <p>
                     
                 <br>
@@ -243,25 +295,7 @@
 
 
             </div>
-            <div class="column">
-                <img class="max-image-width" src="meteor_crater_hiker.jpg" title="Gray&#x27;s Arch">
-                <div class="linkbox">
-                    <i>Photographer<a href="https://link">"website"</a></i>
-                </div>
-                <hr>
-                <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
-                <br>
-                <a href="https://uky-gis.github.io">
-                <img src="logo-color-400px.png" alt="Uinversity of Kentucky Geography"></a>
-                <hr>
-                <ul>
-                    <!-- Change the following contacts to your personal brand, whatever you want it to be! -->
-        
-                    <li>Follow me on twitter <a href="https://twitter.com/NewMapsPlus">@TheRightVue</a></li>
-                    <li>Visit my Github account <a href="https://github.com/newmapsplus">New Map Plus Gallery</a></li>
-                    <li>Visit New Maps Plus Mapping Portfolio <a href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</a>.</li>	
-                </ul>
-            </div>
+            
         </div>
 
         <div class="flex-container">
@@ -273,4 +307,25 @@
 
     </section>
 </body>
+
+<footer>
+    <div class="footer">
+        <div class="flex-containerfooter">
+            <div>
+                <a href="https://uky-gis.github.io">
+                <img src="image/uk_as_white_medium.png" alt="University of Kentucky Geography"></a>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+               <!--<ulfooter>-->
+                        <!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+                        <li>Follow me on twitter <afooter href="https://twitter.com/NewMapsPlus">@TheRightVue</afooter></li>
+                        <li>Visit my Github account <afooter href="https://github.com/newmapsplus">New Map Plus Gallery</afooter</li>
+                        <li>Visit New Maps Plus Mapping Portfolio <afooter href='https://newmapsplus.uky.edu/explore-new-maps'>mapping portfolio</afooter>.</li>
+                <!--</ulfooter>-->
+            </div>
+        </div>      	
+    </div> <!--close div < class="footer"-->
+</footer>
 </html>
